@@ -11,7 +11,7 @@ Description=OTT O11 PANEL
 [Service]
 User=root
 WorkingDirectory=/home/DRMStuff
-ExecStart=/home/DRMStuff/o11 -p 2095 # Porta pode usar qualquer outra da sua preferência.
+ExecStart=/home/DRMStuff/o11 -p 2095 # A porta pode ser alterada conforme sua preferência.
 Restart=always
 RestartSec=3
 
@@ -28,5 +28,5 @@ systemctl enable ott-o11-panel.service
 # Iniciar o serviço
 systemctl start ott-o11-panel.service
 
-# Exibir informações do sistema (opcional)
+# Exibir mensagem de conclusão da instalação
 echo "Instalação concluída."
